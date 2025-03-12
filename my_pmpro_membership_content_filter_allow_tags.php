@@ -21,9 +21,9 @@ function my_pmpro_membership_content_filter_allow_tags( $content, $skipcheck = f
 	global $post, $current_user;
 	
 	// Check if the post type is one of the post types we want to apply this to.
-    if ( ! in_array( $post->post_type, array( 'post', 'hvs', 'business' ) ) ) {
-        return $content;
-    }
+	if ( ! in_array( $post->post_type, array( 'post', 'hvs', 'business' ) ) ) {
+        	return $content;
+    	}
     
 	if ( ! function_exists( 'pmpro_membership_content_filter' ) ) {
 		return $content;
